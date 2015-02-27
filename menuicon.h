@@ -16,25 +16,34 @@ class menuicon : public QSystemTrayIcon
 {
     Q_OBJECT
 
-    QMenu* menu;
-
+protected:
+    impData currentImg;
     FileDownloader* m_img;
     FileDownloader* m_source;
-
+    QMenu* menu;
     QAction* a_close;
+    QAction* a_restart;
+    QAction* a_loc;
+    QAction* a_ip;
+    QAction* a_date;
+    QUrl sourceUrl;
+    int timerval;
+    QString m_sSettingsFile;
+    QTimer *timer;
 
     impData parseSource( QString src, QString needle);
     QString parseIp( QString src);
 
 public:
     menuicon(QObject *parent = 0);
-    ~menuicon();
 
 private slots:
     void loadImage();
     void loadSource();
 
     void onClose();
+    void onRestart();
+    void onDlg();
     void idle();
 };
 
