@@ -31,7 +31,8 @@ HEADERS  += menuicon.h \
     filedownload.h \
     dlg.h
 
-RESOURCES +=
+RESOURCES += \
+    flagicons.qrc
 
 ICON = ipLoc.icns
 

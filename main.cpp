@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     a.setQuitOnLastWindowClosed(false);
     a.setApplicationDisplayName("ipLoc");
     a.setApplicationName("ipLoc");
-    a.setApplicationVersion("1.0");
+    a.setApplicationVersion("1.2");
     a.setObjectName("lg.ipLoc");
     a.setOrganizationDomain("Lightgraffiti");
     a.setOrganizationName("Jan Beneke");

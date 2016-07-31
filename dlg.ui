@@ -95,7 +95,7 @@
       <enum>QFrame::Plain</enum>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ipLoc uses &lt;a href=&quot;http://qt-project.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;http://www.wieistmeineip.de&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;wieistmeineip.de&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ipLoc uses &lt;a href=&quot;http://qt-project.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;http://www.lightgraffiti.de/ip.php&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;lgIPInfo&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </item>

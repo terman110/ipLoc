@@ -5,21 +5,18 @@
 
 #include <QSystemTrayIcon>
 #include <QMenu>
-
-struct impData{
-    QUrl url;
-    QString txt;
-    QString sho;
-};
+#include <QRegularExpression>
 
 class menuicon : public QSystemTrayIcon
 {
     Q_OBJECT
 
 protected:
-    impData currentImg;
-    FileDownloader* m_img;
+    QString m_lastIP;
+    QMap<QString, QString> dictCountry;
+
     FileDownloader* m_source;
+
     QMenu* menu;
     QAction* a_close;
     QAction* a_restart;
@@ -31,14 +28,17 @@ protected:
     QString m_sSettingsFile;
     QTimer *timer;
 
-    impData parseSource( QString src, QString needle);
-    QString parseIp( QString src);
+    QRegularExpression* re;
+
+    QList<QString> lstIcons;
+
+    void fillCountryMap();
+    void loadImage(QString countryCode);
 
 public:
     menuicon(QObject *parent = 0);
 
 private slots:
-    void loadImage();
     void loadSource();
 
     void onClose();
